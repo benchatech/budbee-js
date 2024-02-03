@@ -1,5 +1,6 @@
 export * from "@/rest";
 export * from "@/types";
-import Client from "@/client";
+import Budbee from "@/client";
 
-export default Client;
+export {Budbee};
+export default Budbee;

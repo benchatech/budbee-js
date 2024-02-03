@@ -1,6 +1,7 @@
 import RESTClient from "@/rest";
 import type {
   BetweenDates,
+  Config,
   Delivery,
   DropOff,
   DropOffPayload,
@@ -20,6 +21,10 @@ import type {
 const dateFmt = new Intl.DateTimeFormat("sv-SE");
 
 export default class Client extends RESTClient {
+  constructor(config: Config) {
+    super(config);
+  }
+
   /**
    * List merchant's registered warehouses.
    * @returns {Warehouse[]}
