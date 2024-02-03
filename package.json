@@ -1,5 +1,5 @@
 {
-  "name": "budbee",
+  "name": "@benchatech/budbee",
   "version": "1.0.0",
   "module": "src/index.ts",
   "type": "module",
