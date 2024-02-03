@@ -9,7 +9,7 @@
   "homepage": "https://bencha.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/benchatech/budbee-js"
+    "url": "git+https://github.com/benchatech/budbee-js.git"
   },
   "scripts": {
     "build": "tsc",
