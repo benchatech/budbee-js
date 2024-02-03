@@ -1,10 +1,10 @@
 {
   "name": "budbee",
-  "version": "1.0.5",
+  "version": "1.0.6",
+  "license": "MIT",
   "module": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "license": "MIT",
   "type": "module",
   "homepage": "https://bencha.io",
   "repository": {
@@ -12,7 +12,9 @@
     "url": "git+https://github.com/benchatech/budbee-js.git"
   },
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build": "bun build --target=node ./src/index.ts --outfile=dist/index.js && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "start": "bun run src/index.ts",
     "lint": "eslint ."
   },

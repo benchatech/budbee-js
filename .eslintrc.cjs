@@ -21,9 +21,6 @@ module.exports = {
     "eol-last": ["error", "always"],
     "quotes": ["error", "double", { allowTemplateLiterals: true }],
     "max-len": ["error", 99, { ignoreComments: true }],
-    "no-restricted-imports": ["error", {
-      "patterns": [".*"],
-    }],
     "import/order": ["error", {
       "alphabetize": {
         caseInsensitive: true,

@@ -1,7 +1,6 @@
-import RESTClient from "@/rest";
+import RESTClient from "./rest";
 import type {
   BetweenDates,
-  Config,
   Delivery,
   DropOff,
   DropOffPayload,
@@ -16,15 +15,11 @@ import type {
   PickupPayload,
   TrackingLink,
   Warehouse,
-} from "@/types";
+} from "./types";
 
 const dateFmt = new Intl.DateTimeFormat("sv-SE");
 
-export default class Client extends RESTClient {
-  constructor(config: Config) {
-    super(config);
-  }
-
+export default class Budbee extends RESTClient {
   /**
    * List merchant's registered warehouses.
    * @returns {Warehouse[]}
