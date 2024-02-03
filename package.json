@@ -4,6 +4,7 @@
   "module": "src/index.ts",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://bencha.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/benchatech/budbee-js"
